@@ -4,19 +4,99 @@
         <meta charset="utf-8">
         <title>Navigation and Links</title>
         <!-- TO DO: ADD YOUR NAME TO THE AUTHOR TAG HERE -->
-        <meta name="author" content="">
+        <meta name="author" content="Alaina Elsea">
         <meta name="description" content="Learn about the different types of anchor tags, or links, that you can use when building a page for the web. Make it possible to navigate between pages, send an email, call a number, and more with anchor tags!">
         <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
+    
+      <style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #13394A;
+    }
+
+    .wrapper {
+        max-width: 1040px;
+        margin: auto;
+        background: #f5f5f5;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px 10px;
+    }
+
+    header h1 {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    nav a {
+        text-decoration: none;
+        background-color: #0A2B40;
+        padding: 10px 18px;
+        color: white;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px 40px;
+        line-height: 1.6;
+        color: #222;
+        font-size: 16px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #E3E3E3;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    .back-top {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .back-top a {
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<div class="wrapper">      
+        
+    <header>
             <h1>Navigation and Links</h1>
+            
+          <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
             <!-- TO DO: CREATE THE NAVIGATION FOR THE SITE HERE -->
-            Home
-            About
-            Contact
-        </header>
+      </header>
             
 
         <main>
@@ -49,18 +129,33 @@
 
                 <!-- TO DO: CREATE FRAGMENT LINKS HERE TO THESE TOPIC SECTIONS ON THE PAGE -->
                 <ul id="link-types">
-                    <li>absolute</li> <!-- link this to the absolute links section -->
-                    <li>relative</li> <!-- link this to the relative links section -->
-                    <li>fragment</li> <!-- link this to the fragment links section -->
-                    <li>email</li> <!-- link this to the email links section -->
-                    <li>telephone</li> <!-- link this to the telephone links section -->
-                    <li>relative with fragment</li> <!-- link this to the relative with fragment links section -->
+                    <li>
+                      <a href="https://www.absolute.com">absolute</a>
+                  </li>
+                    <li>
+                      <a href="https://www.relative.com">relative<a>
+                        </li>
+                    <li>
+                      <a href="https://www.fragment.com">fragment<a>
+                        </li>
+                        
+                    <li>
+                      <a href="https://www.email.com">email<a>
+                        </li> 
+                    <li>
+                      <a href="https://www.telephone.com">telephone<a>
+                        </li>
+                    <li>
+                      <a href="https://www.relative with fragment.com">relative with fragment<a>
+                        </li>
                 </ul>
 
                 <!-- TO DO: ADD AN ABSOLUTE LINK TO THE ASU WEBSITE FROM THE TEXT ASU.EDU BELOW, AND INCLUDE THE ATTRIBUTE THAT WILL MAKE THIS LINK OPEN IN A NEW TAB -->
                 <section id="abs">
                     <h3>Absolute Hyperlinks</h3>
-                    <p>Absolute hyperlinks are used when links are needed to another website. You would use an absolute link if you wanted to code a link on your website to asu.edu.</p>
+                    <p>Absolute hyperlinks are used when links are needed to another website. You would use an absolute link if you wanted to code a link on your website to <a href="https://www.asu.edu.">asu.edu</a>, and you could use the target attribute to tell that link to open in a new tab (this can cause issues with accessibility, though).
+                        
+                      </p>
                 </section>
 
                 <section id="rel">
@@ -71,7 +166,7 @@
                 <!-- TO DO: ADD AN EMAIL LINK TO THIS SECTION, USING YOUR ASU EMAIL AND REPLACING THE TEXT YOUREMAIL@ASU.EDU -->
                 <section id="email">
                     <h3>E-Mail Hyperlinks</h3>
-                    <p>Email hyperlinks will automatically launch the user's default mail program. Unfortunately, sites that have coded email hyperlinks may have an issue with spam. The trend today is to use contact forms rather than email addresses, or include the address in the website as content rather than an email link. However, for practice, code your name linking to your ASU email address here: youremail@asu.edu</p>
+                    <p>Email hyperlinks will automatically launch the user's default mail program. Unfortunately, sites that have coded email hyperlinks may have an issue with spam. The trend today is to use contact forms rather than email addresses, or include the address in the website as content rather than an email link. However, for practice, code your name linking to your ASU email address here: <a href="mailto:amelsea@asu.edu">amelsea@asu.edu</a></p>
                 </section>
 
                 <section id="tel">
@@ -97,9 +192,8 @@
 
                 <!-- TO DO: CREATE A BACK TO TOP LINK HERE -->
                 Back to Top <span>&#8679;</span>
-            </section>
-
-        </main>
+          </section>  
+    </main>
 
         <footer>
             <section>
@@ -116,4 +210,5 @@
             <p>Copyright &copy; 2023 - GIT215 - Prof. Barnett</p>
         </footer>
     </body>
+  </div>
 </html>
